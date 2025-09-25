@@ -4,9 +4,6 @@
 
 **LinkScrapper** is a Python tool for extracting and visualizing endpoints from JavaScript files, web pages, or Burp Suite exports. It is based on LinkFinder but updated for Python3 and added more regex support.
 
-The tool outputs results either:
-- Directly to the terminal (`cli` mode), or **HTML report**.
-
 ---
 
 ## Features
@@ -33,6 +30,8 @@ Clone the repo and install requirements:
 ```
 git clone https://github.com/Mad-Hack/LinkScrapper.git
 cd LinkScrapper
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 ```
@@ -52,4 +51,9 @@ options:
   -t, --timeout TIMEOUT
                         Request timeout in seconds (default: 10)
   --insecure            Disable SSL certificate verification (UNSAFE). Use only if you understand the risk.
+
+
+Example:
+Scan a list of URLs + accept invalid CERTs + HTML output
+└─# python3 linkscrap.py -i urls.txt --insecure
 ```
