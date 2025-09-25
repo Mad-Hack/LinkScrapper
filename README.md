@@ -23,6 +23,9 @@ The tool outputs results either:
 
 ---
 
+<img width="1170" height="306" alt="image" src="https://github.com/user-attachments/assets/5d8a6065-1ad7-49ef-9dba-9f4416ec6684" />
+
+
 ## Installation
 
 Clone the repo and install requirements:
