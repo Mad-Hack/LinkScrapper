@@ -20,9 +20,6 @@
 
 ---
 
-<img width="1170" height="306" alt="image" src="https://github.com/user-attachments/assets/5d8a6065-1ad7-49ef-9dba-9f4416ec6684" />
-
-
 ## Installation
 
 Clone the repo and install requirements:
@@ -34,6 +31,8 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+## Usage
 ```
 └─# python3 linkscrap.py -h
 
@@ -51,9 +50,11 @@ options:
   -t, --timeout TIMEOUT
                         Request timeout in seconds (default: 10)
   --insecure            Disable SSL certificate verification (UNSAFE). Use only if you understand the risk.
+```
 
-
-Example:
+## Example
+```
 Scan a list of URLs + accept invalid CERTs + HTML output
 └─# python3 linkscrap.py -i urls.txt --insecure
 ```
+<img width="1170" height="306" alt="image" src="https://github.com/user-attachments/assets/5d8a6065-1ad7-49ef-9dba-9f4416ec6684" />
